@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-container">
+      <form>
+        <input
+          type="text"
+          id="inputArray"
+          placeholder="Enter binary tree array" />
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+
+      <div id="treeContainer">
+        <svg
+          class="graph"
+          id="tree"
+          width="800"
+          height="400"
+          viewBox="0 0 800 400">
+          <g id="graph-container">
+            <g class="links"></g>
+            <g class="nodes"></g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <script src="create-tree.js"></script>
+    <script src="event-handler.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
